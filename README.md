@@ -33,9 +33,13 @@ Setup your API key and zone ID, adjust the variables according to the amount of 
 Since the script takes the running shell it would be a good idea to run it in a detached tmux or screen session. Here some exampels of how you can achieve that. 
 
 **To run a detached screen session with the script:**`screen -dmS nginx-monitor sh nginx-monitor.sh`
+
 **Adding the script to run atomatically on reboot:**`@reboot screen -dmS nginx-monitor sh nginx-monitor.sh`
+
 **To attach to the script's session:**`screen -r nginx-monitor`
+
 **To detach from the session:**`CTRL+A+D`
+
 **To kill the session:**`CTRL+A+K`
 
 # Links and additional info
