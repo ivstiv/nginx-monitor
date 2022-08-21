@@ -29,6 +29,14 @@ Reload the config with `nginx -t && nginx -s reload` to apply the new server blo
 
 Setup your API key and zone ID, adjust the variables according to the amount of traffic that your server gets and just run the script to see if it is working: `sh nginx-monitor.sh`. **If you want to disable logging just leave the variable $LOG empty!**
 
+
+### Creating a token
+- Login & go to `https://dash.cloudflare.com/profile/api-tokens`
+- Select "Create token"
+- Under "Permissions" specify Zone - Firewall Services - Edit
+- Under "Zone Resources" select you website.
+- You can find the zone ID in the "Overview" tab of the website on Cloudflare.
+
 ## Examples
 Since the script takes the running shell it would be a good idea to run it in a detached tmux or screen session. Here some exampels of how you can achieve that. 
 

@@ -121,6 +121,6 @@ while true; do
         fi
     fi
 
-    prevConnections=currConnections
+    prevConnections=$currConnections
     sleep "$CHECK_RATE"
 done
